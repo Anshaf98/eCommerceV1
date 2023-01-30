@@ -1,0 +1,43 @@
+.sliderImgDiv {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.sliderImgBottomTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.sliderImgBottomBottom {
+    text-align: center;
+}
+
+.sliderImgTitle {
+    font-size: 22px;
+    color: #2a2a2a;
+}
+
+.sliderImgStar {
+    font-size: 14px;
+}
+
+.sliderImgPrice {
+    font-size: 18px;
+    color: #a1a1a1;
+    font-weight: 500;
+}
+
+.sliderImgTopInner img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.slick-slide div {
+    margin: 5px;
+}
+
+.sliderImgBottomBottom {
+    margin-bottom: 20px !important;
+}

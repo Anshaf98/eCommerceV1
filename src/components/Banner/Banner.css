@@ -1,0 +1,147 @@
+.intro {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.introLeft,
+.introRight {
+    max-width: 50%;
+}
+
+.introLeft {
+    margin-right: 8px;
+}
+
+.introRight {
+    margin-left: 8px;
+}
+
+.introLeftDiv {
+    position: relative;
+}
+
+.introLeftDiv img {
+    width: 100%;
+}
+
+.introLeftDiv .introLeftContent {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-left: 100px;
+}
+
+.introTitle {
+    font-size: 52px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.introLink {
+    padding: 12px 25px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.introLink:hover {
+    background-color: #ffffff;
+    color: #2a2a2a;
+}
+
+.introRightDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introRightContent {
+    max-width: 50%;
+    position: relative;
+}
+
+.introRightContent:nth-of-type(1),
+.introRightContent:nth-of-type(3) {
+    padding-right: 10px;
+}
+
+.introRightContent:nth-of-type(2),
+.introRightContent:nth-of-type(4) {
+    padding-left: 10px;
+}
+
+.introRightInner {
+    position: relative;
+}
+
+.introRightInner img {
+    width: 100%;
+}
+
+.introRightTexts {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.introRightTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.introRightDesc {
+    font-size: 16px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.introRightHover {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    text-align: center;
+    background-color: rgba(42, 42, 42, 0.97);
+    opacity: 0;
+    visibility: 0;
+    transition: all 0.75s;
+}
+
+.introRightHover:hover {
+    opacity: 1;
+    visibility: 1;
+}
+
+.introRightTextTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.introRightTextDesc {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.introRightLink {
+    padding: 12px 25px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.introRightLink:hover {
+    background-color: #ffffff;
+    color: #2a2a2a;
+}

@@ -1,13 +1,440 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Pacifico&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Distressed&display=swap');
+
+/* 
+
+font-family: 'Comfortaa', cursive;
+font-family: 'Pacifico', cursive;
+
+*/
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.mainContainer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+
+/* Account */
+.account {
+  min-height: 100vh;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 80px 40px;
+}
+
+.react-tabs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #2a2a2a;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #2a2a2a;
+  border-bottom: none !important;
+}
+
+.react-tabs__tab {
+  height: 40px;
+  list-style: none;
+  padding: 12px 6px;
+  cursor: pointer;
+  color: #2a2a2a;
+}
+
+.react-tabs__tab--selected {
+  background: #2a2a2a !important;
+  border-color: transparent;
+  color: #ffffff !important;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  width: 300px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 21px;
+}
+
+.panel-content {
+  text-align: center;
+}
+
+.react-tabs__tab-panel {
+  width: 100%;
+  border-left: 3px dotted #eeeeee;
+  padding: 0 40px;
+}
+
+.accountTitle {
+  color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.accountSubTitle {
+  color: #a1a1a1;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.accountContentTitle {
+  margin-bottom: 20px;
+  color: #a1a1a1;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.accountContentGroup {
+  margin-bottom: 15px;
+}
+
+.accountLight {
+  margin-right: 5px;
+}
+
+.accountBold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.accountContentGroups {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.accountContentGroupsRight img {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.accountCloseText {
+  color: #2a2a2a;
+  font-weight: 700;
+}
+
+.closeBtn {
+  display: block;
+  background-color: #ffffff;
+  border-color: #2a2a2a;
+  color: #2a2a2a;
+  font-size: 13px;
+  padding: 12px 25px;
+  font-weight: 500;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.updatePassword {
+  display: block;
+  margin: 0 auto;
+}
+
+.formSignDiv.updateInfo,
+.formSignDiv.updateImage {
+  width: 400px;
+}
+
+.updateImage {
+  display: flex;
+  justify-content: center;
+}
+
+.userImage {
+  display: none;
+}
+
+.labelImage {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.ordersId {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-weight: 700;
+  border-bottom: 3px dotted #eeeeee;
+}
+
+.ordersId a {
+  display: flex;
+  justify-content: flex-end;
+  color: #2a2a2a;
+  font-size: 20px;
+}
+
+.order {
+  min-height: 100vh;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 80px 40px;
+}
+
+.orderTitle {
+  color: #a1a1a1;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.orderDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cartItemsTop.product.orderProduct {
+  width: 250px;
+}
+
+.cartItemsTopInner.orderImageDiv img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cartItemsTopHover.orderHover {
+  height: 250px;
+}
+
+.orderInfoTitle {
+  margin-bottom: 30px;
+  color: #a1a1a1;
+  font-weight: 400;
+}
+
+.orderText {
+  margin-bottom: 5px;
+  color: #a1a1a1;
+  font-weight: 400;
+}
+
+.orderText span {
+  color: #2a2a2a;
+  font-weight: 700;
+}
+
+.noProducts {
+  margin-top: 80px;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 14px;
+  margin: 15px 0;
+  display: block;
+  text-align: center;
+}
+
+.success {
+  color: #00ff00;
+  font-size: 14px;
+  margin: 15px 0;
+  display: block;
+  text-align: center;
+}
+
+.logout {
+  margin: 0 15px;
+  color: #a1a1a1;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: #1e1e1e;
+}
+
+.accountContentGroups {
+  position: relative;
+}
+
+.deleteContainer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a6e;
+}
+
+.deleteModel {
+  width: 500px;
+  height: 200px;
+  box-shadow: 0 0 10px #ffffff;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.deleteTitle {
+  text-align: center;
+}
+
+.deleteBottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteBottom button {
+  display: block;
+  background-color: #ffffff;
+  border-color: #2a2a2a;
+  color: #2a2a2a;
+  font-size: 13px;
+  padding: 12px 25px;
+  font-weight: 500;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.deleteBottom button:hover {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.checkoutContainer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a6e;
+}
+
+.checkoutWrapper {
+  width: 70%;
+  min-height: 400px;
+  box-shadow: 0 0 10px #ffffff;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.closeCheckout {
+  display: block;
+  margin: 0 0 0 auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  font-style: italic;
+  border-bottom: 1px solid #2a2a2a;
+  cursor: pointer;
+  width: max-content;
+}
+
+.checkoutGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkoutGroup input {
+  width: 70%;
+  height: 40px;
+  line-height: 44px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  color: #aaaaaa;
+  border-radius: 0px;
+  border: 1px solid #7a7a7a;
+  box-shadow: none;
+}
+
+.orderNow {
+  display: block;
+  background-color: #ffffff;
+  border-color: #2a2a2a;
+  color: #2a2a2a;
+  font-size: 13px;
+  padding: 12px 25px;
+  font-weight: 500;
+  transition: all .3s;
+  cursor: pointer;
+  font-family: Poppins;
+}
+
+.orderNow:hover {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.orderDiv {
+  margin-bottom: 180px;
 }

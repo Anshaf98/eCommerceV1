@@ -1,0 +1,121 @@
+.explore {
+    min-height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 80px 40px;
+}
+
+.exploreDiv {
+    display: flex;
+    gap: 50px;
+}
+
+.exploreDivLeft,
+.exploreDivRight {
+    width: 50%;
+}
+
+.exploreTitle {
+    font-size: 24px;
+    color: #2a2a2a;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.exploreDesc {
+    font-size: 14px;
+    color: #aaaaaa;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.exploreQuote {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.exploreQuote svg {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.exploreQuoteText {
+    font-style: italic;
+    font-weight: 500;
+    color: #2a2a2a;
+}
+
+.exploreDescText {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.exploreDescText a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.exploreDivCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exploreDivCard {
+    margin: 10px 10px;
+    width: 45%;
+    min-height: 255px;
+    background-color: #f8f8f8;
+}
+
+.exploreDescText:nth-of-type(2) {
+    margin-bottom: 80px;
+}
+
+.exploreLink {
+    padding: 12px 25px;
+    border: 1px solid #2a2a2a;
+    color: #2a2a2a;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.exploreLink:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.exploreDivTexts {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreDivTexts h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.exploreDivTexts span {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.exploreDivImg img {
+    max-height: 255px;
+    width: 100%;
+    object-fit: cover;
+}

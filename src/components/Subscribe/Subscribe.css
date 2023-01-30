@@ -1,0 +1,107 @@
+.subscribe {
+    min-height: 60vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 80px 40px;
+}
+
+.subscribeDiv {
+    display: flex;
+    gap: 60px;
+}
+
+.subscribeLeft {
+    width: 60%;
+}
+
+.subscribeRight {
+    width: 40%;
+}
+
+.subscribeTitle {
+    line-height: 55px;
+    font-size: 34px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.subscribeDesc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a1a1a1;
+    font-style: italic;
+}
+
+.subscribeLeft form {
+    margin-top: 30px;
+}
+
+.subscribeFormGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribeFormGroup input {
+    width: 310px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 15px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    color: #aaaaaa;
+    border-radius: 0px;
+    border: 1px solid #7a7a7a;
+    box-shadow: none;
+}
+
+.subscribeFormGroup input:focus {
+    outline-color: #ffc107;
+}
+
+.subscribeFormGroup button {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    background-color: #2a2a2a;
+    box-shadow: none;
+    border: 1px solid transparent;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.subscribeFormGroup button:hover {
+    color: #2a2a2a;
+    background-color: #ffffff;
+    border: 1px solid #2a2a2a;
+}
+
+.subscribeRight {
+    display: flex;
+}
+
+.subscribeRightLeft,
+.subscribeRightRight {
+    flex: 1;
+}
+
+.subscribeRightLeft div,
+.subscribeRightRight div {
+    margin-bottom: 30px;
+}
+
+.subscribeRightLeft div h4,
+.subscribeRightRight div h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.subscribeRightLeft div span,
+.subscribeRightRight div span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaaaaa;
+}

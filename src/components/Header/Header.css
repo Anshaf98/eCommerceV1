@@ -1,0 +1,75 @@
+.header {
+    height: 100px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.headerTop {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerTopLinks {
+    font-size: 12px;
+}
+
+.headerTopLinks a {
+    margin: 0 15px;
+    color: #a1a1a1;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.headerTopLinks a:hover {
+    color: #1e1e1e;
+}
+
+.headerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerLogo .headerLogoLink {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+.headerLogo .headerLogoLink h2 {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px #a1a1a1;
+}
+
+.headerLogo .headerLogoLink h4 {
+    text-shadow: 1px 1px #a1a1a1;
+}
+
+.headerNav ul {
+    display: flex;
+    list-style: none;
+}
+
+.headerNav ul li {
+    margin: 0 15px;
+}
+
+.headerNav ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    /* background: #000000; */
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.headerNav ul li a:hover {
+    background: #000000;
+    color: #fff;
+}

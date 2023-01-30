@@ -1,0 +1,89 @@
+.formSign {
+    min-height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPtag {
+    font-size: 10px !important;
+    margin-bottom: 25px;
+    text-align: center !important;
+}
+
+.formSignDiv {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.formSignTitle {
+    color: #2a2a2a;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.formSignGroups {
+    display: flex;
+    flex-direction: column;
+}
+
+.formSignGroups label {
+    font-size: 15px;
+}
+
+.formSignGroups input {
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    line-height: 44px;
+    padding: 0px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaaaaa;
+    border-radius: 0px;
+    border: 1px solid #7a7a7a;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+
+
+
+.formSignDiv button {
+    display: block;
+    margin: 25px auto;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.formSignDiv button:hover {
+    transition: all .3s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+.formSignDiv p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.formSignDiv p a {
+    margin: 0 5px;
+    color: #007bff;
+    font-weight: 700;
+    text-decoration: none;
+}
